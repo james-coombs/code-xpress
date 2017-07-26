@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>CodeXpress</title>
+		<link rel="stylesheet" href="lib/codemirror.css">
+		<link rel="stylesheet" href="theme/monokai.css">
+		<link rel="stylesheet" href="theme/mdn-like.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<div class="wrapper-1">
+			<div class="code-box">
+				<h4 class="editor-title">Code</h4>
+				<textarea id="codeArea">
+				</textarea>
+			</div>
+			<div class="html-box">
+				<h4 class="editor-title">HTML</h4>
+				<textarea id="htmlArea">
+				</textarea>
+			</div>
+		</div>
+		<div class="wrapper-2">
+			<div class="css-box">
+				<h4 class="editor-title">CSS</h4>
+				<textarea id="cssArea">
+				</textarea>
+			</div>
+			<div class="res-box">
+			<h4 class="editor-title">Result</h4>
+				<iframe id="resArea">
+				</iframe>
+				<div>
+					<button id="updateButton">Update</button>
+					<button id="clearButton">Clear</button>
+				</div>
+			</div>
+		</div>
+		<!-- Create a simple CodeMirror instance -->
+		<script src="lib/codemirror.js"></script>
+		<script src="mode/javascript/javascript.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
